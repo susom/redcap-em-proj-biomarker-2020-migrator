@@ -1,0 +1,89 @@
+from_field,from_event,Section Header,Field Type,Field Label,to_event,to_field,to_form,TO_FIELD_TYPE,TO_FIELD_LABEL,NOTES
+record_id,contact_information,,text,Record ID,,record_id,econsent,text,Record ID,
+study_id,contact_information,,text,Study ID,main_arm_1,study_id,contact_information,text,Study ID,
+participation,contact_information,,radio,Participation,main_arm_1,participation,contact_information,radio,Participation,
+recruitment,contact_information,,radio,Recruited From,main_arm_1,recruitment,contact_information,radio,Recruited From,
+pg_names,contact_information,,text,Parent/Guardian Name(s),main_arm_1,pg_names,contact_information,text,Parent/Guardian Name(s),
+num_child,contact_information,,radio,Number of Children Participating,main_arm_1,num_child,contact_information,radio,Number of Children Participating,
+name_c1,contact_information,,text,Child 1 Name,main_arm_1,name_c1,contact_information,text,"Child 1 Name
+ Child 1 is the eldest participant.",
+name_c2,contact_information,,text,Child 2 Name,main_arm_1,name_c2,contact_information,text,"Child 2 Name
+ Child 2 is younger than Child 1 [name_c1]",
+name_c3,contact_information,,text,Child 3 Name,main_arm_1,name_c3,contact_information,text,"Child 3 Name
+ Child 2 is younger than Child 1 [name_c1] and Child 2 [name_c2]",
+name_c4,contact_information,,text,Child 4 Name,main_arm_1,name_c4,contact_information,text,Child 4 Name,
+interpreter,contact_information,,yesno,Interpreter Needed?,main_arm_1,interpreter,contact_information,yesno,Interpreter Needed?,
+language_interpreter,contact_information,,radio,Language,main_arm_1,language_interpreter,contact_information,radio,Language,
+phone_1,contact_information,,text,Phone Number,main_arm_1,phone_1,contact_information,text,Phone Number,
+phone_2,contact_information,,text,Phone Number,main_arm_1,phone_2,contact_information,text,Phone Number,
+email_1,contact_information,,text,Email Address,main_arm_1,email_1,contact_information,text,Email Address,
+email_2,contact_information,,text,Email Address,main_arm_1,email_2,contact_information,text,Email Address,
+contact_notes,contact_information,,notes,Notes,main_arm_1,contact_notes,contact_information,notes,Notes,
+date_consent,collection_survey_information,,text,Date of Consent,main_arm_1,date_consent,collection_survey_information_individual,text,Date of Consent,
+sample_collection,collection_survey_information,,checkbox,Samples Collected from,,,,,,
+future_research_consent,collection_survey_information,,yesno,Consent for Samples to be Saved for Future Research,main_arm_1,future_research_consent,collection_survey_information_individual,yesno,Consent for Samples to be Saved for Future Research,
+moyr_c1,collection_survey_information,Child(ren) Mo/Yr Birth,text,Child 1 Mo/Yr Birth,child_1_arm_2,moyr_c1,collection_survey_information_individual,text,Child 1 Mo/Yr Birth,
+collection_c1,collection_survey_information,,text,Child 1 Date of Collection,child_1_arm_2,collection_c1,collection_survey_information_individual,text,Child 1 Date of Collection,
+age_mo_c1,collection_survey_information,,calc,Child 1 Age (Months),,,collection_survey_information_individual,calc,Child 1 Age (Months),CALC
+moyr_c2,collection_survey_information,,text,Child 2 Mo/Yr Birth,child_2_arm_3,moyr_c1,,,,
+collection_c2,collection_survey_information,,text,Child 2 Date of Collection,child_2_arm_3,collection_c1,,,,
+age_mo_c2,collection_survey_information,,calc,Child 2 Age (Months),,,,,,CALC
+moyr_c3,collection_survey_information,,text,Child 3 Mo/Yr Birth,child_3_arm_4,moyr_c1,,,,
+collection_c3,collection_survey_information,,text,Child 3 Date of Collection,child_3_arm_4,collection_c1,,,,
+age_mo_c3,collection_survey_information,,calc,Child 3 Age (Months),,,,,,CALC
+moyr_c4,collection_survey_information,,text,Child 4 Mo/Yr Birth,child_4_arm_5,moyr_c1,,,,
+collection_c4,collection_survey_information,,text,Child 4 Date of Collection,child_4_arm_5,collection_c1,,,,
+age_mo_c4,collection_survey_information,,calc,Child 4 Age (Months),,,,,,CALC
+asq_c1,collection_survey_information,Age Ranges for Questionnaires,radio,Child 1 - ASQ Age Range,,,collection_survey_information_individual,calc,Child 1 - ASQ Age Range,NO MAP AS TARGET IS CALC FIELD: asq_c1
+swyc_c1,collection_survey_information,,radio,Child 1 - SWYC Age Range,,,collection_survey_information_individual,calc,Child - SWYC Age Range,NO MAP AS TARGET IS CALC FIELD: swyc_c1
+seam_c1,collection_survey_information,,radio,Child 1 - SEAM Age Range,,,collection_survey_information_individual,calc,Child - SEAM Age Range,NO MAP AS TARGET IS CALC FIELD: seam_c1
+asq_c2,collection_survey_information,,radio,Child 2 - ASQ Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: asq_c1
+swyc_c2,collection_survey_information,,radio,Child 2 - SWYC Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: swyc_c1
+seam_c2,collection_survey_information,,radio,Child 2 - SEAM Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: seam_c1
+asq_c3,collection_survey_information,,radio,Child 3 - ASQ Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: asq_c1
+swyc_c3,collection_survey_information,,radio,Child 3 - SWYC Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: swyc_c1
+seam_c3,collection_survey_information,,radio,Child 3 - SEAM Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: seam_c1
+asq_c4,collection_survey_information,,radio,Child 4 - ASQ Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: asq_c1
+swyc_c4,collection_survey_information,,radio,Child 4 - SWYC Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: swyc_c1
+seam_c4,collection_survey_information,,radio,Child 4 - SEAM Age Range,,,,,,NO MAP AS TARGET IS CALC FIELD: seam_c1
+survey_username,basic_parentguardian_information,,text,"Enter preferred e-mail address. 
+ 
+ (This will be your survey login username, which parents/guardians can use to save survey responses and return to complete them at a later time.)",main_arm_1,survey_username,,,,
+survey_password,basic_parentguardian_information,,text,"Please enter your desired password. 
+ 
+ (This will be your survey login password, which parents can use to save survey responses and return to complete them at a later time.)",main_arm_1,survey_password,,,,
+pg_num,basic_parentguardian_information,,radio,Number of Parents/Guardians in Household,main_arm_1,pg_num,,,,
+name_pg1,basic_parentguardian_information,,text,Parent/Guardian 1 Name,main_arm_1,name_pg1,,,,
+sex_pg1,basic_parentguardian_information,,radio,Parent/Guardian 1 Sex,main_arm_1,sex_pg1,,,,
+relation_pg1,basic_parentguardian_information,,radio,Parent/Guardian 1 Relation to Child(ren) Participating in Study,main_arm_1,relation_pg1,,,,
+moyr_pg1,basic_parentguardian_information,,text,Parent/Guardian 1 Mo/Yr of Birth,main_arm_1,moyr_pg1,,,,
+name_pg2,basic_parentguardian_information,,text,Parent/Guardian 2 Name,main_arm_1,name_pg2,,,,
+sex_pg2,basic_parentguardian_information,,radio,Parent/Guardian 2 Sex,main_arm_1,sex_pg2,,,,
+relation_pg2,basic_parentguardian_information,,radio,Parent/Guardian 2 Relation to Child(ren) Participating in Study,main_arm_1,relation_pg2,,,,
+moyr_pg2,basic_parentguardian_information,,text,Parent/Guardian 2 Mo/Yr of Birth,main_arm_1,moyr_pg2,,,,
+status_family,demographics_family,,radio,Family Status,parent_1_arm_1,status_family,demographics_family,radio,Family Status,
+num_adults_family,demographics_family,,text,Number of Adult(s) in Household,parent_1_arm_1,num_adults_family,demographics_family,text,Number of Adult(s) in Household,
+income_family,demographics_family,,radio,Total Household Income (USD/year),parent_1_arm_1,income_family,demographics_family,radio,Total Household Income (USD/year),
+num_children_family,demographics_family,,text,"<div class=""rich-text-field-label""><p>Number of Child(ren) in <span style=""text-decoration: underline;"">Household</span></p></div>",parent_1_arm_1,num_children_family,demographics_family,text,"<div class=""rich-text-field-label""><p>Number of Child(ren) in <span style=""text-decoration: underline;"">Household</span></p></div>",
+sex_c1,demographics_children,,radio,[name_c1] - Sex,child_1_arm_2,sex_c1,demographics_children,radio,[name_c1] - Sex,
+race_c1,demographics_children,,checkbox,[name_c1] - Race,child_1_arm_2,race_c1,demographics_children,checkbox,[name_c1] - Race,
+ethnicity_c1,demographics_children,,checkbox,[name_c1] - Ethnicity,child_1_arm_2,ethnicity_c1,demographics_children,checkbox,[name_c1] - Ethnicity,
+sex_c2,demographics_children,,radio,[name_c2] - Sex,child_2_arm_3,sex_c1,,,,
+race_c2,demographics_children,,checkbox,[name_c2] - Race,child_2_arm_3,race_c1,,,,
+ethnicity_c2,demographics_children,,checkbox,[name_c2] - Ethnicity,child_2_arm_3,ethnicity_c1,,,,
+sex_c3,demographics_children,,radio,[name_c3] - Sex,child_3_arm_4,sex_c1,,,,
+race_c3,demographics_children,,checkbox,[name_c3] - Race,child_3_arm_4,race_c1,,,,
+ethnicity_c3,demographics_children,,checkbox,[name_c3] - Ethnicity,child_3_arm_4,ethnicity_c1,,,,
+sex_c4,demographics_children,,radio,[name_c4] - Sex,child_4_arm_5,sex_c1,,,,
+race_c4,demographics_children,,checkbox,[name_c4] - Race,child_4_arm_5,race_c1,,,,
+ethnicity_c4,demographics_children,,checkbox,[name_c4] - Ethnicity,child_4_arm_5,ethnicity_c1,,,,
+sdq1,sociodemographic_survey_paces,,descriptive,"<div class=""rich-text-field-label""><p style=""text-align: center;"">Pediatric Anxiety and Cortisol concentrations from Experiencing Stress (PACES): Hair cortisol concentration (HCC) as a biomarker of anxiety in immigrant and non-immigrant children</p> <p style=""text-align: center;""> </p> <h2 style=""text-align: center;"">PACES Sociodemographic Survey </h2></div>",parent_1_arm_1,sdq1,sociodemographic_survey_paces,descriptive,"<div class=""rich-text-field-label""><p style=""text-align: center;"">Pediatric Anxiety and Cortisol concentrations from Experiencing Stress (PACES): Hair cortisol concentration (HCC) as a biomarker of anxiety in immigrant and non-immigrant children</p> <p style=""text-align: center;""> </p> <h2 style=""text-align: center;"">PACES Sociodemographic Survey </h2></div>",
+sdq2,sociodemographic_survey_paces,,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">1. What is the gender of your child?</span></p></div>",parent_1_arm_1,sdq2,sociodemographic_survey_paces,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">1. What is the gender of your child?</span></p></div>",
+sdq3,sociodemographic_survey_paces,,text,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">2. What is the child's date of birth?</span></p></div>",parent_1_arm_1,sdq3,sociodemographic_survey_paces,text,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">2. What is the child's date of birth?</span></p></div>",
+sdq4,sociodemographic_survey_paces,,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">3. What is the household income of your home?</span></p></div>",parent_1_arm_1,sdq4,sociodemographic_survey_paces,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">3. What is the household income of your home?</span></p></div>",
+sdq5,sociodemographic_survey_paces,,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">4. What is the size of your household?</span></p></div>",parent_1_arm_1,sdq5,sociodemographic_survey_paces,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">4. What is the size of your household?</span></p></div>",
+sdq6,sociodemographic_survey_paces,,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">5. Is your home a single-parent household or a two-parent household?</span></p></div>",parent_1_arm_1,sdq6,sociodemographic_survey_paces,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">5. Is your home a single-parent household or a two-parent household?</span></p></div>",
+info,sociodemographic_survey_paces,,descriptive,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">If this is a single-parent household please answer the following question, if not a single parent household please skip to question #8.</span></p></div>",parent_1_arm_1,info,sociodemographic_survey_paces,descriptive,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">If this is a single-parent household please answer the following question, if not a single parent household please skip to question #8.</span></p></div>",
+sdq9,sociodemographic_survey_paces,,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">6. What country was the parent born in?</span></p></div>",parent_1_arm_1,sdq9,sociodemographic_survey_paces,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">6. What country was the parent born in?</span></p></div>",
+sdq7,sociodemographic_survey_paces,,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">7. For the two-parent households, were both parents born in the US?</span></p></div>",parent_1_arm_1,sdq7,sociodemographic_survey_paces,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">7. For the two-parent households, were both parents born in the US?</span></p></div>",
+sdq8,sociodemographic_survey_paces,,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">8. What is the highest level of parental education?</span></p></div>",parent_1_arm_1,sdq8,sociodemographic_survey_paces,radio,"<div class=""rich-text-field-label""><p><span style=""font-weight: normal;"">8. What is the highest level of parental education?</span></p></div>",

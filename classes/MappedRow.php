@@ -225,6 +225,9 @@ and rd.value = '%s'",
 
 
                 switch($mapper[$key]['to_field']) {
+                    case 'survey_username':
+                        $val = trim($val);  //extra whitespace
+                        break;
                     case 'hours_workstudy_pg':
                         //added Nov2021 : See email from sunny 2Nov2021
                         // 50+  à 51  or +80
@@ -297,6 +300,13 @@ and rd.value = '%s'",
 
             }
  */
+
+            //hanlde whitespace in emails
+            if( $mapper[$key]['to_field'] == 'survey_username'){
+                $val = trim($val);
+            }
+
+
             //convert moyr_c1 and moyr_c2 to mm/yyyy
             //TODO: move this to transmogrifier
             if( ($mapper[$key]['to_field'] == 'moyr_c1') OR ($mapper[$key]['to_field'] == 'moyr_c2')){

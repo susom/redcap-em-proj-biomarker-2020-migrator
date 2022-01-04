@@ -19,7 +19,8 @@ class DataCheck
         'c1_sft_waist'            => '/(?<find>\b(\d+\b))/',
         'age_yr_pg'               => '/(?<find>\b(\d+\b))/',
         'hours_workstudy_pg'      => '/(?<find>\b(^[0-9]*\.?[0-9]*$\b))/', //numbers only, decimals okay
-        'survey_username'         => '/(?<find>^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,}))$/mi'
+        'survey_username'         => '/(?<find>^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,}))$/mi',
+        'email_2'                 => '/(?<find>^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,}))$/mi'
     );
 
     public static function valueValid($field, $val) {

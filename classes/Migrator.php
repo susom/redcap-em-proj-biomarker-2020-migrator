@@ -39,13 +39,6 @@ if (isset($_POST['new_dd'])) {
     exit;
 }
 
-if (isset($_POST['one_record'])) {
-    $module->emDebug("Up single record: $first_ct");
-    $module->processOneRecord($file, $origin_pid, $first_ct);
-    exit;
-}
-
-
 if ($file) {
     $data = $module->processRecords($file, $origin_pid, $first_ct, $last_ct);
 } else {

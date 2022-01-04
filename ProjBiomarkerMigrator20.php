@@ -45,36 +45,6 @@ class ProjBiomarkerMigrator20 extends \ExternalModules\AbstractExternalModule
 
     }
 
-    public  function processOneRecord($file, $origin_pid, $record_id) {
-        $origin_main_event = $this->getProjectSetting('origin-main-event');
-
-        // 1. get the list of record ids from project 1
-        $this->emDebug("About to get single record $record_id");
-        $record_list[] = $record_id;
-
-        //there seems to be an issue with getdata running into PHP Fatal error:  Allowed memory size of 2147483648 bytes exhausted
-        $params = array(
-            'project_id'   => $origin_pid,
-            'return_format' => 'array',
-            'events'        => array($origin_main_event),
-            'records'       => $record_list,
-            'fields'        => null
-        );
-        $data = REDCap::getData($params);
-
-        //2. Set up the Mapper
-        //upload csv file that defines the mapping from old field to new field
-        //$this->mapper = new Mapper($this->getProjectSetting('origin-pid'), $file);
-        $this->mapper = $this->getMapper($origin_pid, $file);
-
-        //3. Set the file and origin_pid
-        $this->origin_pid = $origin_pid;
-        $this->file       = $file;
-
-        $this->process($origin_pid, $data);
-
-    }
-
     public  function processRecords($file, $origin_pid, $first_ct = 1, $last_ct = null) {
 
         $origin_main_event = $this->getProjectSetting('origin-main-event');
@@ -201,7 +171,6 @@ class ProjBiomarkerMigrator20 extends \ExternalModules\AbstractExternalModule
      */
     private function processEvent($ctr, $row, $record, $event_id) {
         $target_main_event = $this->getProjectSetting('main-config-event-id');
-        $target_repeat_event = $this->getProjectSetting('repeat-event-id') ;
         $verbose             = $this->getProjectSetting('verbose');
 
 
@@ -234,7 +203,7 @@ class ProjBiomarkerMigrator20 extends \ExternalModules\AbstractExternalModule
             return;
         }
 
-        //NO LONGEA NEED TO CHECK IF FOUND
+        //NO LONGER NEED TO CHECK IF FOUND
         /**
         try {
                 $found = $mrow->checkIDExistsInMain();
@@ -259,7 +228,7 @@ class ProjBiomarkerMigrator20 extends \ExternalModules\AbstractExternalModule
         }
          */
 
-        $this->emDEbug("Row $ctr: EMPTY: $record_id NOT FOUND so proceed with migration");
+        $this->emDEbug("Row $ctr: $record_id: proeed with migration");
 
         //$record_id = $record; //reuse old record
         $record_id = $mrow->getTargetID();

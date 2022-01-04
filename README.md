@@ -7,10 +7,16 @@ This EM will migrate and restructure the data
 Upload was done separately for each event. 
 * Update the EM Config to refer to the correct TARGET event
 * maps for each event are stored in the maps dir
-  * map_2020_21_general_arm_1.csv
-  * map_2020_21_child_1_arm_2.csv
-  * map_2020_21_child_2_arm_3.csv
-  * map_2020_21_parentguardians_arm_5.csv 
+
+
+  |Event in Origin project (use in EM setting)|Map to use|
+  |---|---|
+  | general_arm_1 |map_2020_21_general_arm_1.csv|
+  | child_1_arm_2 |map_2020_21_child_1_arm_2.csv|
+  | child_2_arm_3 |map_2020_21_child_2_arm_3.csv|
+  |child_3_arm_4 |map_2020_21_child_3_arm_4.csv|
+  |child_4_arm_6 |map_2020_21_child_4_arm_6.csv|
+  |parentguardians_arm_5|map_2020_21_parentguardians_arm_5.csv| 
 
 
 # Supported Field Modifers

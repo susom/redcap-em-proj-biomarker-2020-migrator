@@ -14,15 +14,9 @@
   "links": {
     "project": [
       {
-        "name": "Migrator",
+        "name": "Migrator 2020-2021",
         "icon": "page_white_stack",
         "url": "view/index.php",
-        "show-header-and-footer": true
-      },
-       {
-        "name": "Test",
-        "icon": "page_white_stack",
-        "url": "view/test.php",
         "show-header-and-footer": true
       }
     ]
